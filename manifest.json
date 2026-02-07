@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Translator (Babapro)",
+  "version": "1.0.0",
+  "description": "Easily translate Reddit posts and comments into your preferred language.",
+  "icons": {
+    "128": "ikon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://translate.googleapis.com/*",
+    "https://www.reddit.com/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "babapro-translator@reddit.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

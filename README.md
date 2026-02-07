@@ -1,4 +1,4 @@
-# 🚀 Reddit Translator (Babapro Edition)
+# 🚀 Reddit Translator
 
 A modern, minimalist, and high-performance browser extension that translates Reddit posts and comments using Google Translate API. Designed to blend perfectly with Reddit's original UI.
 
